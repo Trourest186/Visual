@@ -1,17 +1,12 @@
 #include<iostream>
-#include<fstream>
+#include<iomanip>
+#include<string>
 using namespace std;
 int main()
 {
-	ifstream ifs("giang.txt");
-	size_t n;
-	int* arr;
-	ifs >> n;
-	arr = new int[n];
-	for (int i = 0; i < n; i++)
-	{
-		ifs >> arr[i];
-	}
+	string str2 = "Giang";
+	string str1 = "giang";
+	cout << "Hien thi" << str1.compare(str2) << endl ;
 }
 
 
