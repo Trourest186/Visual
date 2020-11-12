@@ -1,12 +1,17 @@
 #include<iostream>
-#include<iomanip>
-#include<string>
+#include<fstream>
 using namespace std;
 int main()
 {
-	string str2 = "Giang";
-	string str1 = "giang";
-	cout << "Hien thi" << str1.compare(str2) << endl ;
+	ifstream ifs("giang.txt");
+	size_t n;
+	int* arr;
+	ifs >> n;
+	arr = new int[n];
+	for (int i = 0; i < n; i++)
+	{
+		ifs >> arr[i];
+	}
 }
 
 
