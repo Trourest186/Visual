@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SoBeMaster4.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="S.cpp">
+    <ClCompile Include="BTVN1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
