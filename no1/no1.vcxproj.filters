@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SouBrMaster1.cpp">
+    <ClCompile Include="SouBrMaster2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
