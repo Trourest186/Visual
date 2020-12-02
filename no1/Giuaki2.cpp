@@ -60,7 +60,7 @@ int main() {
 	Person tan;
 	tan.my_malloc(30);
 	Sex a = woman;
-	char s[30] = "Nguyen Ba Tan";
+	char s[30] = "Pham Truong Giang";
 	tan.set_person(a, 2001, s);
 	cout << ;
 
