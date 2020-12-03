@@ -53,15 +53,14 @@ public :
 		cout << "Tao doi tuong" << this << endl;
 		v = new float[n = b.n];
 		cout << "Xin cap phat bo nho" << n << " so thuc hien tai" << v << endl;
-		for (int i = 0; i < n; i++)
-		{
-			cout << "Toa do [" << i + 1 << "]:";
-			cin >> b.v[i];
+		
+		for (int i = 0; i < n; i++) {
+			v[i] = b.v[i];
 		}
 
 	}
 	~vector() {
-		cout << " cap phat bo nho " << n << " so thuc tai" << v << endl;
+		cout << "\ncap phat bo nho " << n << " so thuc tai : " << v << endl;
 		delete[] v;
 	}
 	void display() {
@@ -72,7 +71,19 @@ public :
 			cout << v[i] << " ";
 		}
 	}
+	vector& operator=(const vector& a) {
+		if (n != a.n) {
+			delete[] v;
+			n = a.n;
+			v = new float[n];
+		}
+		for (int i = 0; i < n; i++) {
+			v[i] = a.v[i];
+		}
+		return *this;
+	}
 };
+
 int main()
 {
 	float a[3] = { 1 ,2 , 3 };
@@ -87,4 +98,5 @@ int main()
 	cout << "\n" << endl;
 	vector v4(v1);
 	v4.display();
+	cout << endl;
 }
